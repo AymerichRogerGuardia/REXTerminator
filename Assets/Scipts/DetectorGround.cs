@@ -4,48 +4,47 @@ using UnityEngine;
 
 public class DetectorGround : MonoBehaviour
 {
-    [SerializeField] BoxCollider2D boxCollider2d;
-    [SerializeField] public LayerMask groundLayerMask;
+    float moveInput;
     Rigidbody2D rb;
+    public List<Vector3> points;
+    public bool grounded;
+    public bool walled;
+    public GameObject groundRayObject;
+    public LayerMask groundMask;
 
-    public GameObject groundRayObect;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+
+    }
+
     private void Update()
     {
-        //Aqui crido la funcio de cuan
-        IsGrounded();
+        grounded = false;
+        for (int i = 0; i < points.Count; i++)
+        {
+            Debug.DrawRay(groundRayObject.transform.position + points[i], -transform.up, Color.green);
+            RaycastHit2D hitGround = Physics2D.Raycast(groundRayObject.transform.position + points[i], -transform.up, 1f, groundMask);
+
+            if (hitGround.collider != null)
+            {
+                grounded = true;
+
+            }
+        }
+
+
+
+
+
+
     }
-    private bool IsGrounded()
-    {
-        RaycastHit2D hitGround = Physics2D.Raycast (groundRayObect.transform.position, -Vector2.up, groundLayerMask);
-        Color rayColor;
-        if (hitGround.collider != null)
-        {
-            rayColor = Color.green;
-        }
-        else
-        {
-            rayColor = Color.red;
-        }
-
-
-        /*
-        float HeightText = .01f;
-        RaycastHit2D raycastHit = Physics2D.Raycast(boxCollider2d.bounds.center, Vector2.down, boxCollider2d.bounds.extents.y + HeightText, groundLayerMask);
-        Color rayColor;
-        if (raycastHit.collider != null)
-        {
-            rayColor = Color.green;
-        }else
-        {
-            rayColor = Color.red;
-        }
-        Debug.DrawRay(boxCollider2d.bounds.center, Vector2.down * (boxCollider2d.bounds.extents.y + HeightText) , rayColor);
-        Debug.Log(raycastHit.collider);
-        */
-        Debug.DrawRay(groundRayObect.transform.position, -Vector2.up * hitGround.distance);
-        Debug.Log(hitGround.collider);
-        return hitGround.collider != null;
-       
-    }
-
 }
