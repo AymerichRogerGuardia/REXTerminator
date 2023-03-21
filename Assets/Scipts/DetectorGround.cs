@@ -28,23 +28,18 @@ public class DetectorGround : MonoBehaviour
 
     private void Update()
     {
-        grounded = false;
-        for (int i = 0; i < points.Count; i++)
-        {
-            Debug.DrawRay(groundRayObject.transform.position + points[i], -transform.up, Color.green);
-            RaycastHit2D hitGround = Physics2D.Raycast(groundRayObject.transform.position + points[i], -transform.up, 1f, groundMask);
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "ground")
+        {
+            RaycastHit2D hitGround = Physics2D.Raycast(groundRayObject.transform.position + (0.5f * Vector3.down), Vector2.down, 0.5f, groundMask);
             if (hitGround.collider != null)
             {
                 grounded = true;
-
             }
         }
-
-
-
-
-
-
     }
 }
