@@ -26,17 +26,15 @@ public class Jump : MonoBehaviour
         //aqui faig que mentre la tecla estigui presionada lo que primer fara es pujar el objecte, despues multiplicara la força del objecte amb un valor , y per ultim lo que fa el ForceMode2D es canviar de força a impuls fent que l'objecte puji cap a d'alt
         if (Input.GetKeyDown(KeyCode.Space) && detector.grounded) 
         {
-<<<<<<< HEAD
+
             detector.grounded = false;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             timer = 0;
-=======
-<<<<<<< HEAD
+
             rb.AddForce(Vector2.up * jumpForce);
-=======
+
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
->>>>>>> f89186c3dff6209f4f9f64d035a9bf884932b7ff
->>>>>>> a230710850a398ff1a631fa266f6646737563080
+
         }
 
     }
