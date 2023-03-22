@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Jump : MonoBehaviour
 {
+    public static Jump Instance { get; private set; }
     //declaro el objecte y li posu la variable i li indico un valor
     [SerializeField] float jumpForce = 7;
     [SerializeField] private LayerMask groundlayerMask;
@@ -15,10 +16,11 @@ public class Jump : MonoBehaviour
 
     private void Start()
     {
-      timer = 0;
-      //en el primer frame li indico que la palaula rb es igual al component de rigidbody que es el cos del objecte
-      rb = GetComponent<Rigidbody2D>();
-      detector = GetComponent<DetectorGround>();
+        Instance = this;
+        timer = 0;
+        //en el primer frame li indico que la palaula rb es igual al component de rigidbody que es el cos del objecte
+        rb = GetComponent<Rigidbody2D>();
+        detector = GetComponent<DetectorGround>();
     }
 
     private void Update()
