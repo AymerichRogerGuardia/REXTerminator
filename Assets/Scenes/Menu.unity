@@ -829,7 +829,7 @@ GameObject:
   - component: {fileID: 1114097949}
   - component: {fileID: 1114097950}
   m_Layer: 0
-  m_Name: Layer1
+  m_Name: Arboles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -892,7 +892,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 612a5c74e610a2144ba174c4fb8a4831, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.67058825, g: 0.2901961, b: 0.023529412, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -913,7 +913,7 @@ GameObject:
   - component: {fileID: 1146629916}
   - component: {fileID: 1146629917}
   m_Layer: 0
-  m_Name: Layer1
+  m_Name: Arboles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -976,7 +976,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 612a5c74e610a2144ba174c4fb8a4831, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.67058825, g: 0.2901961, b: 0.023529412, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
