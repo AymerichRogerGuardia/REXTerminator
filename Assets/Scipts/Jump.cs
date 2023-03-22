@@ -27,11 +27,11 @@ public class Jump : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && detector.grounded) 
         {
 
-<<<<<<< HEAD
+
             rb.AddForce(Vector2.up * jumpForce);
 
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-=======
+
             detector.grounded = false;
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             timer = 0;
@@ -39,7 +39,7 @@ public class Jump : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce);
 
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
->>>>>>> df1ec0f7c1319c797b765395685dd605dd5b85d6
+
 
         }
 
