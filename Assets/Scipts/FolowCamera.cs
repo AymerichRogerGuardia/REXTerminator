@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class FolowCamera : MonoBehaviour
 {
-    public GameObject player;
-
-    private void Start()
+    public Camera cam;
+    public Transform target;
+    public Vector3 offset;
+    public float speed = 10;
+    // Start is called before the first frame update
+    void Start()
     {
-        
+        cam = GetComponent<Camera>();
     }
-    private void Update()
+
+    // Update is called once per frame
+    void Update()
     {
-        transform.position = new Vector3(player.transform.position.x, transform.position.y);
+        cam.transform.position = Vector3.Lerp(cam.transform.position, target.position + offset, Time.deltaTime * speed);
     }
 }
