@@ -276,6 +276,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2770893258478020673, guid: 8a5670799ea019c468c36c4c18da5896, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2770893258478020673, guid: 8a5670799ea019c468c36c4c18da5896, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2770893258478020673, guid: 8a5670799ea019c468c36c4c18da5896, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2770893258478020673, guid: 8a5670799ea019c468c36c4c18da5896, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 2770893258478020673, guid: 8a5670799ea019c468c36c4c18da5896, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.07
+      objectReference: {fileID: 0}
     - target: {fileID: 8153156691197419759, guid: 8a5670799ea019c468c36c4c18da5896, type: 3}
       propertyPath: m_Name
       value: FlyerEnemy
@@ -473,6 +493,18 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4638535515269475334, guid: 8589b6a6df272114a9b95fe2ce5c110e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638535515269475334, guid: 8589b6a6df272114a9b95fe2ce5c110e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638535515269475334, guid: 8589b6a6df272114a9b95fe2ce5c110e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638535515269475334, guid: 8589b6a6df272114a9b95fe2ce5c110e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.61
       objectReference: {fileID: 0}
@@ -600,7 +632,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1613637221
 GameObject:
