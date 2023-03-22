@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class BulletDamage : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D col)
+    public int bulletDamage;
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (col.gameObject.tag.Equals("Bullet"))
+        if (other.gameObject.tag == "Enemy")
         {
-            Destroy (col.gameObject);
+            other.gameObject.GetComponent<EnemyHealth>().damageEnemy(bulletDamage);
             Destroy(gameObject);
         }
+        
     }
 }

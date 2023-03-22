@@ -11,7 +11,11 @@ GameObject:
   - component: {fileID: 6475300552679507973}
   - component: {fileID: 3595473030353905474}
   - component: {fileID: 5624305567988727098}
+<<<<<<< HEAD
+  - component: {fileID: -2365852420708976385}
+=======
   - component: {fileID: -8057049971484660854}
+>>>>>>> 5e2d263f37845f1819f02203c95a97cce7b51c73
   m_Layer: 0
   m_Name: ShootEnemy1
   m_TagString: Untagged
@@ -112,14 +116,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< HEAD
+--- !u!114 &-2365852420708976385
+MonoBehaviour:
+=======
 --- !u!50 &-8057049971484660854
 Rigidbody2D:
   serializedVersion: 4
+>>>>>>> 5e2d263f37845f1819f02203c95a97cce7b51c73
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8522525351390779351}
+<<<<<<< HEAD
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df112ad35a92afa4a97c27e07205dde4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  target_enemy: 1
+=======
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -133,3 +151,4 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+>>>>>>> 5e2d263f37845f1819f02203c95a97cce7b51c73
