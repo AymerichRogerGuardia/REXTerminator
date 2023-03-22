@@ -3,15 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - ground
   - Bullet
   - Enemy
+=======
+  tags: []
+>>>>>>> bc0544f774923ec01b1c1d549685348446db0649
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Ground
+  - 
   - Water
   - UI
   - 

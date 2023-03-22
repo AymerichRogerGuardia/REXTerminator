@@ -9,10 +9,11 @@ public class EnemySpawner : MonoBehaviour
     public float spawnDistance = 15.0f;
     public int spawnAmount = 1;
     public float lastSpawn = 0;
+    Rigidbody2D rb;
 
     private void Start()
     {
-
+        
     }
     private void Update()
     {
@@ -33,8 +34,8 @@ public class EnemySpawner : MonoBehaviour
             Quaternion rotation = Quaternion.AngleAxis(0, Vector3.forward);
 
             GameObject enemy = Instantiate(this.enemyPrefab, transform.position, rotation);
+
+            //rb.AddForce(Vector2.left, ForceMode2D.Impulse);
         }
     }
-
-    
 }
